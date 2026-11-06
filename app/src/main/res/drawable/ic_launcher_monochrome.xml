@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The themed-icon layer: Android tints it, so only its shape matters.
+     The Spine B mark, 46 dp wide, centred in the 108 dp canvas, inside the 66 dp safe zone. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M36.9167,34 h5.8334 a2.9167,2.9167 0 0 1 2.9167,2.9167 v34.1667 a2.9167,2.9167 0 0 1 -2.9167,2.9167 h-5.8334 a2.9167,2.9167 0 0 1 -2.9167,-2.9167 v-34.1667 a2.9167,2.9167 0 0 1 2.9167,-2.9167 z M54,34 h11.6667 a5,5 0 0 1 5,5 v6.6667 a5,5 0 0 1 -5,5 h-11.6667 a5,5 0 0 1 -5,-5 v-6.6667 a5,5 0 0 1 5,-5 z M54,54 h15 a5,5 0 0 1 5,5 v10 a5,5 0 0 1 -5,5 h-15 a5,5 0 0 1 -5,-5 v-10 a5,5 0 0 1 5,-5 z" />
+</vector>

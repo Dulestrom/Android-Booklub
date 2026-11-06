@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generated from the desktop icon by tools/svg_to_vector.py. Tinted at use. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp" android:viewportWidth="16" android:viewportHeight="16">
+    <path android:pathData="M7.9998 11.2002C8.99387 11.2002 9.7995 12.006 9.79961 13C9.7995 13.994 8.99387 14.7998 7.9998 14.7998C7.00582 14.7997 6.2001 13.994 6.2 13C6.2001 12.006 7.00582 11.2003 7.9998 11.2002Z" android:fillColor="#FF000000" />
+    <path android:pathData="M7.9998 1.75C8.41402 1.75 8.7498 2.08579 8.7498 2.5V9.5C8.7498 9.91421 8.41402 10.25 7.9998 10.25C7.58568 10.2499 7.2498 9.91415 7.2498 9.5V2.5C7.2498 2.08585 7.58568 1.75011 7.9998 1.75Z" android:fillColor="#FF000000" />
+</vector>

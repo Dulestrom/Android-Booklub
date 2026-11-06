@@ -1,0 +1,35 @@
+[package]
+name = "booklub-mobile"
+description = "The bridge between Booklub's shared Rust core and the Android app."
+version = "1.0.0"
+edition = "2021"
+license = "ISC"
+publish = false
+
+[lib]
+name = "booklub_mobile"
+crate-type = ["cdylib", "lib"]
+
+[[bin]]
+name = "uniffi-bindgen"
+path = "src/bin/uniffi-bindgen.rs"
+
+[dependencies]
+# The shared core and sync crates come from the desktop repository, pinned to one commit.
+booklub-core = { git = "https://github.com/Dulestrom/Desktop-Booklub", rev = "52d7270e3d3ad271a4eb9b6c7e2a6c837a515254" }
+booklub-sync = { git = "https://github.com/Dulestrom/Desktop-Booklub", rev = "52d7270e3d3ad271a4eb9b6c7e2a6c837a515254" }
+chrono = "0.4"
+image = { version = "0.25", default-features = false, features = ["jpeg", "png", "webp"] }
+# Android has no system SQLite for native code, so the phone build compiles its own.
+rusqlite = { version = "0.41", features = ["bundled"] }
+thiserror = "2"
+uniffi = { version = "0.32", features = ["cli"] }
+
+[dev-dependencies]
+tempfile = "3"
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+strip = "debuginfo"
